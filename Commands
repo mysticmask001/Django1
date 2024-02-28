@@ -1,0 +1,52 @@
+commands
+
+Django;
+Create a new project: django-admin startproject (project name)[location-manage.py file]
+Run project: python3 manage.py runserver
+Create an app: django-admin startapp (app name)[location-manage.py file]
+
+1. Creating a django project
+
+2. Inside project, create an app
+
+3. In project's settings file install the app
+
+4. Inside the app folder create a url file
+
+5. In the project url import include
+
+6. Create a default url path and include your app's urls file
+
+7. In the ap urls file within the urlspatterns create a default path/urls and specify the function. Don't forget to import views.
+
+8. In the views files, define the functions referenced in the app.urls 
+
+
+How to create a super user: python3 manage.py createsuperuser
+
+How to run a migration: python3 manage.py migrate
+
+How to make a Migration: python3 manage.py makemigrations
+
+To ensure that model has been successfully propagated into project:
+   1. Make a migration
+   2. Run a migration
+
+
+C.R.A.D. operation:
+Create, Read, Add, Delete
+
+
+ADDING A NEW FIELD TO ACCOMODATE IMAGES
+1. Create a media directory
+2. Import os in the settings file
+3. Define a MEDIA_URLS and MEDIA_ROOT;
+           MEDIA_URL = '/media/'
+           MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+4. Create path;
+       urlpatterns = [
+                  path('admin/', admin.site.urls),
+                  path('', include('Ishuga.urls'))
+                ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+        

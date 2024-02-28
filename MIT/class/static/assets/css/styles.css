@@ -1,0 +1,11 @@
+.p{
+    color: green;
+}
+
+.xy{
+   background-image: url("images/slide-3.jpg");
+}
+img{
+    border-radius: 20px 20px 20px 20px;
+    width: 50%;
+}
